@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //Complete this line
+                // '%' = format signifier
+                // '-' = to the left
+                // '-15' = 15 spaces to the left
+                //'0' pad with zeros. '03d' = width of the number i.e. 13 = 013
+                //'d' = decimals
+                // '%n' = new line character
+                System.out.printf("%-15s%03d%n", s1, x);
+            }
+            System.out.println("================================");
+
+    }
+}
