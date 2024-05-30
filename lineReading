@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    //set up Scanner
+    Scanner scanner = new Scanner(System.in);
+        int lineNumber = 1;
+
+        while (scanner.hasNext()) {  // Check if there's more input
+            String line = scanner.nextLine();  // Read next line of input
+            System.out.println(lineNumber + " " + line);  // Print line number followed by the line content
+            lineNumber++;  // Increment line number for the next line
+        }
+
+        scanner.close();  // Close the scanner
+    
+    }
+}
