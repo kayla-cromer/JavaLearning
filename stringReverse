@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        String A = sc.next();
+        sc.close(); // Close the scanner as a best practice
+        
+        // Variable to store the reversed version of string A
+        String reversed = new StringBuilder(A).reverse().toString();
+        
+        // Compare the original string with the reversed version
+        if (A.equals(reversed)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
