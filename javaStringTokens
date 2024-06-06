@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine().trim(); // Trim to remove leading and trailing spaces
+        
+        // Check for an edge case where the input is empty or only contains delimiters
+        if (s.length() == 0) {
+            System.out.println(0);
+        } else {
+            // Split the string based on non-alphabetic characters
+            String[] tokens = s.split("[^a-zA-Z]+");
+            
+            // Output the number of tokens
+            System.out.println(tokens.length);
+            
+            // Output each token on a new line
+            for (String token : tokens) {
+                System.out.println(token);
+            }
+        }
+        
+        scan.close();
+    }
+}
