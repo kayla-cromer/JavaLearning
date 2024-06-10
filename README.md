@@ -1,7 +1,7 @@
 # JavaLearning
 Brushing up on Java knowledge and to display skills
 
-#Introduction
+# Introduction
 Hey there, my name is Kayla. This repository is set aside to display my skills in Java as well as offering me a reference point for basic Java functions.
 
 # Why Java?
