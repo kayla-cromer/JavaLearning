@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int testCases = Integer.parseInt(in.nextLine());  // Read the number of test cases
+        while(testCases > 0){
+            String pattern = in.nextLine();  // Read the regex pattern
+            try {
+                Pattern.compile(pattern);  // Try to compile the pattern
+                System.out.println("Valid");  // If no exception is thrown, the pattern is valid
+            } catch (PatternSyntaxException e) {
+                System.out.println("Invalid");  // If an exception is thrown, the pattern is invalid
+            }
+            testCases--;  // Decrement the test case counter
+        }
+        in.close();  // Close the scanner
+    }
+}
